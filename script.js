@@ -25,9 +25,6 @@ $(document).ready(function() {
 		$("h2").toggleClass("h2color");
 		$(this).toggleClass("growfont");
 	});
-	$(".bottom_button").hover(function() {
-		$("body").toggleClass("newbgcolor");
-	});
 	$("a").replaceWith("<button>Button</>");
 	
 	$("button:first").click(function(){
@@ -36,4 +33,7 @@ $(document).ready(function() {
     $("button:last").click(function() {
     	$(this).hide("slow");	
     });
+    $("button").hover(function() {
+		$("body").toggleClass("newbgcolor");
+	});
 }); 
