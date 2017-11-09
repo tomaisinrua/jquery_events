@@ -33,4 +33,7 @@ $(document).ready(function() {
 	$("button:first").click(function(){
         $("#hidepara").toggle("slow");
     });
+    $("button:last").click(function() {
+    	$(this).hide("slow");	
+    });
 }); 
