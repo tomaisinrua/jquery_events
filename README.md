@@ -1,8 +1,7 @@
 # Interactive Front End Development
 
-##  Writing our First jQuery Script Unit Challenge
+##  Events in jQuery - Unit Challenge
 
-###    Table
 ######      Contents
         1)Cards-jquery.html
         2)style.css
