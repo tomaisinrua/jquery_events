@@ -25,10 +25,10 @@ $(document).ready(function() {
 		$("h2").toggleClass("h2color");
 		$(this).toggleClass("growfont");
 	});
-	$("a").replaceWith("<button>Button</>");
+	$("a").replaceWith("<button class='bottom_button'>New Button</>");
 	
 	$("button:first").click(function(){
-        $("#hidepara").toggle("slow");
+        $("p:first").toggle("slow");
     });
     $("button:last").click(function() {
     	$(this).hide("slow");	
