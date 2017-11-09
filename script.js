@@ -31,7 +31,8 @@ $(document).ready(function() {
         $("p:first").toggle("slow");
     });
     $("button:last").click(function() {
-    	$(this).hide("slow");	
+    	$(this).hide(5000);
+    	$(this).show(5000);
     });
     $("button").hover(function() {
 		$("body").toggleClass("newbgcolor");
