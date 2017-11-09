@@ -1,6 +1,5 @@
 $(document).ready(function() {
- 
-
+	
  	$("#stream1_btn").on("click", function() {
  		$(".stream1").removeClass('highlight_stream');
 		$(".stream2").removeClass('highlight_stream');
@@ -29,6 +28,9 @@ $(document).ready(function() {
 	$(".bottom_button").hover(function() {
 		$("body").toggleClass("newbgcolor");
 	});
-
-
+	$("a").replaceWith("<button>Button</>");
+	
+	$("button:first").click(function(){
+        $("#hidepara").toggle("slow");
+    });
 }); 
