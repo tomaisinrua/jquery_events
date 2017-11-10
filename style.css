@@ -13,6 +13,8 @@ body{
 }
 .growfont {
 	font-size: 200%;
+	padding: 0;
+	margin: 0;
 }
 .newbgcolor {
 	background-color: #000000;
