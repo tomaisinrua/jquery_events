@@ -1,25 +1,8 @@
 body{
 	font-family: 'Roboto', sans-serif;
-	/*background-image: url(img/code-institute.jpg);
- 	background-size: cover;
- 	color: #ffffff;*/
  	background-color: #eee;
 }
-.redtext {
-	color: #FF0000;
-}
-.h2color {
-	background-color: #ADD8E6;
-}
-.growfont {
-	font-size: 236%;
-	text-align: center;
-	padding: 0;
-	margin: 0;
-}
-.newbgcolor {
-	background-color: #000000;
-}
+
 h1{
 	font-size: 3em;
 	text-align: center;
@@ -62,6 +45,7 @@ div{
 }
 .card_para{
 	flex:1 0 auto;
+	display: none;
 }
 
 #container
@@ -79,14 +63,15 @@ div{
 }
 
 .card{
-	flex:1; /* */
+	flex:1; /* sets equal width to cards*/
 	display: flex;	/* make the contents controllable by flexbox*/
-	flex-flow:column;	/* */
-	min-width: 240px; /**/
+	flex-flow:column;	/* sets as a column layout*/
+	min-width: 240px; 
 	margin: 10px;
 	padding: 20px;
 	background-color: #fff;
 }
+/*will set stream backround colour when used in jquery function*/
 .highlight_stream{
 	background-color: #EB5255;
 }
@@ -113,45 +98,41 @@ nav{
 	width: 100%;
 }
 ul{
-	display: flex;
+	display: flex;/*creates a flew container*/
 	justify-content:space-between;
 	flex-flow: row;
-	/*flex-flow: row-reverse;*/
-	/*justify-content:flex-end;*/
-	/*justify-content:space-around;*/
-	/*align-items:flex-start;*/
 	align-items:baseline;
 	border-radius: 10px;
 	list-style-type: none; /*Remove Bullets*/
 	padding: 0;	
 }
 li{
-	flex:1;
+	flex:1;/*assigns width to list items*/
 	height: 30px;
-	/*width:10%;*/
-	/*border:2px solid #000;*/
-	/*background-color: #81BBC9;*/
-	/*border-radius: 10px;*/
-	font-family: Dosis;
 	padding:20px 20px 20px 20px;
 	text-align: center;
 	font-size: 1.3em;
 }
 
 #logoNav{
-	flex:6;
+	flex:6;/*assigns larger size to the logo*/
 	text-align: left;
 	font-size: 2em;
 	font-weight: bold;
 }
-
+/*underlines text*/
 .underline{
   text-decoration:underline;
 }
+/*adds border*/
 .border{
   border: solid 5px #ccc;
 }
 
+/*adds background-color pink*/
+.highlight{
+  background-color: pink;
+}
 
 @media screen and (max-width: 700px){
 	ul{
